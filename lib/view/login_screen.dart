@@ -18,22 +18,6 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     final mediaQuery = MediaQuery.of(context);
-
-    final mailField = TextFormField(
-      controller: _mailController,
-      keyboardType: TextInputType.emailAddress,
-      decoration: InputDecoration(
-          hintText: "abc@mail.com",
-          labelText: "Email",
-          hintStyle: TextStyle(color: Colors.white)),
-    );
-
-    final passwordField = TextFormField(
-      controller: _passwordController,
-      obscureText: true,
-      decoration: InputDecoration(hintText: "Password", labelText: "Password"),
-    );
-
     return Scaffold(
       backgroundColor: Colors.indigo,
       body: Form(
